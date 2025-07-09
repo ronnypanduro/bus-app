@@ -31,6 +31,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        compose = true
     }
 }
 
@@ -41,6 +42,10 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.play.services.maps)
+    implementation(libs.activity)
+    implementation("com.mapbox.maps:android:11.13.1")
+    implementation("com.mapbox.extension:maps-compose:11.13.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
